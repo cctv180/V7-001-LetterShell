@@ -2,79 +2,91 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source files">
-      <UniqueIdentifier>{f1f35450-052c-4c88-af59-5aef9e797ca3}</UniqueIdentifier>
+      <UniqueIdentifier>{a3285480-dc81-48e6-8304-1bbd4a8df2c5}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header files">
-      <UniqueIdentifier>{6d34ef5b-060a-43a5-b6a0-2172527cd816}</UniqueIdentifier>
+      <UniqueIdentifier>{22defb36-5726-46cf-852c-bb33330d81a7}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource files">
-      <UniqueIdentifier>{487b7669-4c6d-4d20-9893-5839e3190472}</UniqueIdentifier>
+      <UniqueIdentifier>{08834f6a-2fe0-43bd-a798-312e151aeaee}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="Source files\Doc">
-      <UniqueIdentifier>{5798b8d9-bca2-4660-911f-7f27c7560393}</UniqueIdentifier>
+      <UniqueIdentifier>{1574fe7c-dfa6-4fd5-a0c8-a83cb934b144}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\CMSIS">
-      <UniqueIdentifier>{7acf075d-8dbd-43d5-ba9d-70787b162283}</UniqueIdentifier>
+      <UniqueIdentifier>{8fd0733e-6e13-44bf-84c3-23d6f6ef08b1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\HAL_Driver">
-      <UniqueIdentifier>{a90e4c36-7eff-4300-b97a-9d717cb191ac}</UniqueIdentifier>
+      <UniqueIdentifier>{e17a2837-c762-45ef-963d-073518390a61}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\SEGGER">
-      <UniqueIdentifier>{728bd0af-a206-49d3-a654-a22ab0aadc7a}</UniqueIdentifier>
+      <UniqueIdentifier>{1f08a857-108e-4dbf-844c-3212495682e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\SEGGER\HardFault">
-      <UniqueIdentifier>{74f83864-271a-46f4-9409-7d5853beea7a}</UniqueIdentifier>
+      <UniqueIdentifier>{83026bec-476d-4d86-8647-56c65a6a97a2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\MDK-ARM">
-      <UniqueIdentifier>{fb379ada-b4ab-4a79-afd2-2c5672e49a59}</UniqueIdentifier>
+      <UniqueIdentifier>{41dbfe77-6656-4398-b2df-a6144d60f73e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\User">
-      <UniqueIdentifier>{57ae4ee9-4edc-4a2e-a1eb-df68989c2c75}</UniqueIdentifier>
+      <UniqueIdentifier>{d58136f3-b99f-4bc5-8612-263ce56c3b19}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\BSP">
-      <UniqueIdentifier>{ecf3d6b3-97a4-40b5-baab-9374bab9199c}</UniqueIdentifier>
+      <UniqueIdentifier>{fa1ab3a0-3f6d-4a02-9b2d-802ec3ca5b79}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source files\letter-shell">
-      <UniqueIdentifier>{91e0be4c-16a4-4c07-9bce-976b6aac84fe}</UniqueIdentifier>
+    <Filter Include="Source files\letter_shell">
+      <UniqueIdentifier>{67c2496f-dbef-4d84-b745-0b6aac45936f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\letter_shell\src">
+      <UniqueIdentifier>{b02f2c76-93bd-4066-b3a2-5b57b5f7f04c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\letter_shell\port">
+      <UniqueIdentifier>{c89d7588-0eef-4660-822a-c66382dda476}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source files\Device-specific files">
-      <UniqueIdentifier>{30687fca-ff7f-4600-a782-a9b84c5e442d}</UniqueIdentifier>
+      <UniqueIdentifier>{72f5f145-97bf-48b5-9318-4de71bb2c31e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Doc">
-      <UniqueIdentifier>{539a19dc-943d-4d8d-8e79-97738266a3c6}</UniqueIdentifier>
+      <UniqueIdentifier>{0a6ee93f-c3ad-479f-8a08-43b57a3da078}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\CMSIS">
-      <UniqueIdentifier>{c4d0192b-0e3c-4f8d-847a-60733bb80a6c}</UniqueIdentifier>
+      <UniqueIdentifier>{c21db9a2-7b7a-404a-a693-755880614e0c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\HAL_Driver">
-      <UniqueIdentifier>{7102fd70-07c8-438e-9e65-cc68f83d45a7}</UniqueIdentifier>
+      <UniqueIdentifier>{6142abba-2bd0-4542-871b-01cff9b65e4d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\SEGGER">
-      <UniqueIdentifier>{dc4cf224-0c76-45e1-9ae7-586bcd3335f4}</UniqueIdentifier>
+      <UniqueIdentifier>{e2a9acc0-3e58-4c55-bedf-e265e6eb4ec2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\SEGGER\HardFault">
-      <UniqueIdentifier>{e05aa4c1-2245-43fa-b366-ddd7f9a5e3d9}</UniqueIdentifier>
+      <UniqueIdentifier>{c69d1086-9508-4909-9785-f125c730f973}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\MDK-ARM">
-      <UniqueIdentifier>{1b1fa18a-2595-4e49-bbc1-5afba4f77d22}</UniqueIdentifier>
+      <UniqueIdentifier>{277c368f-70a0-4383-a0ba-42e558b21f75}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\User">
-      <UniqueIdentifier>{2402476e-e244-4c8c-a2c6-8baf68ee4329}</UniqueIdentifier>
+      <UniqueIdentifier>{d90281c8-2c2c-4f58-ba21-28492ab5a39b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\BSP">
-      <UniqueIdentifier>{2975fb4e-2778-4c7f-8d3b-4eca85ca2c81}</UniqueIdentifier>
+      <UniqueIdentifier>{152d5805-a2b5-42d1-b5a1-c9493b11af27}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header files\letter-shell">
-      <UniqueIdentifier>{d265989a-1b61-422e-982c-872b5a58d011}</UniqueIdentifier>
+    <Filter Include="Header files\letter_shell">
+      <UniqueIdentifier>{71fb9e7e-cee5-4c5e-aa14-83c36afb7d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\letter_shell\src">
+      <UniqueIdentifier>{c850421e-9bc6-451b-9146-5f121aff7153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\letter_shell\port">
+      <UniqueIdentifier>{f46ae75f-cf3e-4696-b2d1-ac1aa5011a89}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header files\Device-specific files">
-      <UniqueIdentifier>{91a31e0d-42ae-4149-baff-b6c01fbf6be4}</UniqueIdentifier>
+      <UniqueIdentifier>{71232d05-9ccb-4a89-b013-7cbd1736dd31}</UniqueIdentifier>
     </Filter>
     <Filter Include="VisualGDB settings">
-      <UniqueIdentifier>{40a4fd9b-eee0-410b-83de-f2de8f310ebb}</UniqueIdentifier>
+      <UniqueIdentifier>{f0e680d7-5d2c-4ff5-b243-e4eea95bece2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -151,16 +163,19 @@
       <Filter>Source files\BSP</Filter>
     </ClCompile>
     <ClCompile Include="..\User\letter_shell\src\shell.c">
-      <Filter>Source files\letter-shell</Filter>
+      <Filter>Source files\letter_shell\src</Filter>
     </ClCompile>
     <ClCompile Include="..\User\letter_shell\src\shell_cmd_list.c">
-      <Filter>Source files\letter-shell</Filter>
+      <Filter>Source files\letter_shell\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\User\letter_shell\src\shell_companion.c">
+      <Filter>Source files\letter_shell\src</Filter>
     </ClCompile>
     <ClCompile Include="..\User\letter_shell\src\shell_ext.c">
-      <Filter>Source files\letter-shell</Filter>
+      <Filter>Source files\letter_shell\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\User\letter_shell\src\shell_port.c">
-      <Filter>Source files\letter-shell</Filter>
+    <ClCompile Include="..\User\letter_shell\port\shell_port.c">
+      <Filter>Source files\letter_shell\port</Filter>
     </ClCompile>
     <None Include="stm32.props">
       <Filter>Source files\Device-specific files</Filter>

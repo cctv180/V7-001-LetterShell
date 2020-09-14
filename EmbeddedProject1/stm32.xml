@@ -48,7 +48,7 @@
     <AllDependencies>
       <ProjectDependency>
         <RelativePath>..\Project\MDK-ARM(uV5)\project.uvprojx</RelativePath>
-        <Timestamp>132444797381113351</Timestamp>
+        <Timestamp>132445638232534152</Timestamp>
       </ProjectDependency>
     </AllDependencies>
     <RootDirectory>
@@ -178,21 +178,35 @@
           </Files>
         </VirtualDirectorySnapshot>
         <VirtualDirectorySnapshot>
-          <Name>letter-shell</Name>
-          <Files>
-            <VirtualFileSnapshot>
-              <RelativePath>..\User\letter_shell\src\shell.c</RelativePath>
-            </VirtualFileSnapshot>
-            <VirtualFileSnapshot>
-              <RelativePath>..\User\letter_shell\src\shell_cmd_list.c</RelativePath>
-            </VirtualFileSnapshot>
-            <VirtualFileSnapshot>
-              <RelativePath>..\User\letter_shell\src\shell_ext.c</RelativePath>
-            </VirtualFileSnapshot>
-            <VirtualFileSnapshot>
-              <RelativePath>..\User\letter_shell\src\shell_port.c</RelativePath>
-            </VirtualFileSnapshot>
-          </Files>
+          <Name>letter_shell</Name>
+          <Subdirectories>
+            <VirtualDirectorySnapshot>
+              <Name>src</Name>
+              <Files>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\User\letter_shell\src\shell.c</RelativePath>
+                </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\User\letter_shell\src\shell_cmd_list.c</RelativePath>
+                </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\User\letter_shell\src\shell_companion.c</RelativePath>
+                </VirtualFileSnapshot>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\User\letter_shell\src\shell_ext.c</RelativePath>
+                </VirtualFileSnapshot>
+              </Files>
+            </VirtualDirectorySnapshot>
+            <VirtualDirectorySnapshot>
+              <Name>port</Name>
+              <Files>
+                <VirtualFileSnapshot>
+                  <RelativePath>..\User\letter_shell\port\shell_port.c</RelativePath>
+                </VirtualFileSnapshot>
+              </Files>
+            </VirtualDirectorySnapshot>
+          </Subdirectories>
+          <Files />
         </VirtualDirectorySnapshot>
       </Subdirectories>
       <Files />
@@ -202,13 +216,13 @@
         <IsStaticLibrary>false</IsStaticLibrary>
         <Settings>
           <IncludeDirectories>
-            <string>E:\Stm32Project\_V7\V7-001\Libraries\CMSIS\Include</string>
-            <string>E:\Stm32Project\_V7\V7-001\Libraries\CMSIS\Device\ST\STM32H7xx\Include</string>
-            <string>E:\Stm32Project\_V7\V7-001\Libraries\STM32H7xx_HAL_Driver\Inc</string>
-            <string>E:\Stm32Project\_V7\V7-001\User\bsp\inc</string>
-            <string>E:\Stm32Project\_V7\V7-001\User</string>
-            <string>E:\Stm32Project\_V7\V7-001\User\bsp</string>
-            <string>E:\Stm32Project\_V7\V7-001\User\letter_shell\inc</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\Libraries\CMSIS\Include</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\Libraries\CMSIS\Device\ST\STM32H7xx\Include</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\Libraries\STM32H7xx_HAL_Driver\Inc</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\User\bsp\inc</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\User</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\User\bsp</string>
+            <string>E:\Stm32Project\V7-001-LetterShell\User\letter_shell\inc</string>
           </IncludeDirectories>
           <PreprocessorMacros>
             <string>$$com.sysprogs.bspoptions.primary_memory$$_layout</string>

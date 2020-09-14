@@ -18,6 +18,8 @@ project/MDK-ARM(uV5)/*.uvguix.*
 EmbeddedProject1/VisualGDB
 EmbeddedProject1/.vs
 EmbeddedProject1/*.vcxproj.user
+EmbeddedProject1/EmbeddedProject1-Debug.vgdbsettings
+EmbeddedProject1/EmbeddedProject1-Release.vgdbsettings
 
 EWARM/bin
 EWARM/obj

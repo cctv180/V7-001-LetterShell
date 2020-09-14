@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{250FF4FC-30B4-46DF-9802-E7F342597726}</ProjectGuid>
+    <ProjectGuid>{C7ABB2E9-D43D-4C64-8693-3CBF168A91B2}</ProjectGuid>
     <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
     <BSP_VERSION>2020.06</BSP_VERSION>
   </PropertyGroup>
@@ -41,7 +41,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\Libraries\CMSIS\Include;..\Libraries\CMSIS\Device\ST\STM32H7xx\Include;..\Libraries\STM32H7xx_HAL_Driver\Inc;..\User\bsp\inc;..\User;..\User\bsp;..\User\letter_shell\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>flash_layout;USE_HAL_DRIVER;STM32H743xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG=1;flash_layout;USE_HAL_DRIVER;STM32H743xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
@@ -56,7 +56,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\Libraries\CMSIS\Include;..\Libraries\CMSIS\Device\ST\STM32H7xx\Include;..\Libraries\STM32H7xx_HAL_Driver\Inc;..\User\bsp\inc;..\User;..\User\bsp;..\User\letter_shell\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>flash_layout;USE_HAL_DRIVER;STM32H743xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;flash_layout;USE_HAL_DRIVER;STM32H743xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
@@ -100,8 +100,9 @@
     <ClCompile Include="..\User\bsp\stm32h7xx_it.c" />
     <ClCompile Include="..\User\letter_shell\src\shell.c" />
     <ClCompile Include="..\User\letter_shell\src\shell_cmd_list.c" />
+    <ClCompile Include="..\User\letter_shell\src\shell_companion.c" />
     <ClCompile Include="..\User\letter_shell\src\shell_ext.c" />
-    <ClCompile Include="..\User\letter_shell\src\shell_port.c" />
+    <ClCompile Include="..\User\letter_shell\port\shell_port.c" />
     <None Include="stm32.props" />
     <ClCompile Include="$(BSP_ROOT)\STM32H7xxxx\StartupFiles\startup_stm32h743xx.c" />
     <None Include="..\Doc\01.例程功能说明.txt" />
