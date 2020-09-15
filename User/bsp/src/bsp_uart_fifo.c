@@ -1423,7 +1423,7 @@ void UART8_IRQHandler(void)
 */
 int fputc(int ch, FILE *f)
 {
-#if 0	/* 将需要printf的字符通过串口中断FIFO发送出去，printf函数会立即返回 */
+#if 1	/* 将需要printf的字符通过串口中断FIFO发送出去，printf函数会立即返回 */
 	comSendChar(COM1, ch);
 	
 	return ch;

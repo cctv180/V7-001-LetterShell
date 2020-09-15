@@ -29,6 +29,11 @@
 /* 定义 BSP 版本号 */
 #define __STM32H7_BSP_VERSION		"1.1"
 
+/* 开启打印数据 */
+#define BSP_INFO_EN
+/* 开启调试打印 */
+#define DEBUG_MODE
+
 /* CPU空闲时执行的函数 */
 //#define CPU_IDLE()		bsp_Idle()
 
@@ -37,7 +42,7 @@
 #define DISABLE_INT()	__set_PRIMASK(1)	/* 禁止全局中断 */
 
 /* 这个宏仅用于调试阶段排错 */
-#define BSP_Printf		printf
+//#define BSP_Printf		printf
 //#define BSP_Printf(...)
 
 #define EXTI9_5_ISR_MOVE_OUT		/* bsp.h 中定义此行，表示本函数移到 stam32f4xx_it.c。 避免重复定义 */
@@ -55,6 +60,38 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+/*
+*********************************************************************************************************
+ * 以下宏自动处理与提示
+*********************************************************************************************************
+ */
+#ifdef DEBUG_MODE
+ //#define BSP_Printf(...) bsp_log_debug(__FILE__, __LINE__, __VA_ARGS__)
+#define BSP_Printf(...)                         \
+    do                                                  \
+    {                                                   \
+        printf("[D/SYS] (%s:%d) ", __FILE__, __LINE__);  \
+        printf(__VA_ARGS__);                            \
+        printf("\r\n");                                 \
+    } while (0)
+#else
+#define BSP_Printf(...)
+#endif /* DEBUG_MODE END */
+
+#ifdef BSP_INFO_EN
+ //#define BSP_INFO(...)  bsp_log_info(__VA_ARGS__)
+#define BSP_INFO(...)                               \
+    do                                                  \
+    {                                                   \
+        printf("[I/SYS] ");                              \
+        printf(__VA_ARGS__);                            \
+        printf("\r\n");                                 \
+    } while (0)
+#else
+#define BSP_INFO(...)
+#endif
+
 
 #ifndef TRUE
 	#define TRUE  1
